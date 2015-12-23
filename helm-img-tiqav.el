@@ -1,4 +1,4 @@
-;;; helm-img-tiqav --- An helm-source for joking.
+;;; helm-img-tiqav.el --- An helm-source for joking.
 
 ;; Description: An helm-source for joking.
 ;; Author: Sho Matsumoto <l3msh0_at_gmail.com>
@@ -57,3 +57,4 @@
      :buffer "*helm image tiqav")))
 
 (provide 'helm-img-tiqav)
+;;; helm-img-tiqav.el ends here
