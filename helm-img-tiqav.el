@@ -49,6 +49,7 @@
 
 (helm-img-define-source "tiqav" :candidates 'helm-img-tiqav-make-candidates)
 
+;;;###autoload
 (defun helm-img-tiqav (query)
   (interactive "Mquery: ")
   (let ((helm-img-query query))
