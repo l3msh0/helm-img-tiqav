@@ -26,9 +26,10 @@
 ;; Boston, MA 02110-1301, USA.
 
 (require 'helm-img)
+(require 'url-util)
 
 (defun helm-img-tiqav-search (query)
-  (let* ((result-buffer (url-retrieve-synchronously (concat "http://api.tiqav.com/search.json?q=" query)))
+  (let* ((result-buffer (url-retrieve-synchronously (concat "http://api.tiqav.com/search.json?q=" (url-hexify-string query))))
          (body (helm-img-extract-body result-buffer)))
     (json-read-from-string body)))
 
