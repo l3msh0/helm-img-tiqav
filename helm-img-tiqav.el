@@ -25,6 +25,8 @@
 ;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301, USA.
 
+;;; Code:
+
 (require 'helm-img)
 (require 'url-util)
 
@@ -50,6 +52,7 @@
 
 (helm-img-define-source "tiqav" :candidates 'helm-img-tiqav-make-candidates)
 
+;;;###autoload
 (defun helm-img-tiqav (query)
   (interactive "Mquery: ")
   (let ((helm-img-query query))
